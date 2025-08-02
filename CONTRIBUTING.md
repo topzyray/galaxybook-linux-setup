@@ -1,6 +1,6 @@
-# Contributing to Galaxy Book2 Linux Audio Fix
+# Contributing to Galaxy Book Linux Audio Fix
 
-Thank you for your interest in contributing! We welcome all kinds of contributions to improve the project and help fellow Linux users get audio working properly on Samsung Galaxy Book2 devices.
+Thank you for your interest in contributing! We welcome all kinds of contributions to improve the project and help fellow Linux users get audio working properly on Samsung Galaxy Book devices.
 
 ---
 
@@ -69,4 +69,4 @@ We’re happy to collaborate and improve this together 🙌
 
 Thanks again, and happy hacking!
 
-– The GalaxyBook2 Audio Fix Maintainers
+– The GalaxyBook Audio Fix Maintainers
