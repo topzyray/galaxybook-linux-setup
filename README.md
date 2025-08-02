@@ -53,6 +53,10 @@ If you prefer to set it up step by step, follow the guide inside the script or r
 - **Manjaro community post by user @TO912** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
 - **topzyray (Tope Taiwo) for automation and Ubuntu port** ["https://github.com/topzyray/galaxybook2-linux-setup"]
 
+## ❤️ Share or Contribute
+
+Feel free to open issues or pull requests to improve this further or add fingerprint/backlight support.
+
 ## 📝 License
 
 This project is open-source under the MIT License. Contributions are welcome!
