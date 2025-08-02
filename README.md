@@ -10,14 +10,13 @@ This project contains scripts and services to fix the audio (Realtek ALC298 spea
 
 ## 📦 Folder Structure
 
-   galaxybook2-linux-setup/ <br />
-   ├── install.sh <br />
-   ├── scripts/ <br />
-   │ └── init-audio.sh <br />
-   ├── services/ <br />
-   │ ├── galaxybook2-audio.service <br />
-   │ └── galaxybook2-audio-resume.service <br />
-
+galaxybook2-linux-setup/ <br />
+├── install.sh <br />
+├── scripts/ <br />
+│ └── realtek-alc298-audio-init.sh <br />
+├── services/ <br />
+│ ├── galaxybook2-audio.service <br />
+│ └── galaxybook2-audio-resume.service <br />
 
 ## 🚀 How to Use
 
@@ -35,12 +34,24 @@ chmod +x install.sh
 sudo reboot
 ```
 
+## 🔊 Manual Setup (Advanced)
+
+If you prefer to set it up step by step, follow the guide inside the script or review:
+
+- **joshuagrisham’s GitHub work** ["https://github.com/joshuagrisham/samsung-galaxybook-extras/issues/80"]
+- **Manjaro community post by user @TO912** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
+
+## 🧪 Troubleshooting
+
+- Run: `alsamixer` → Select `sof-hda-dsp` → Unmute and raise volumes
+- Run: `speaker-test -c 2 -t wav` or run any video or audio → Listen for left/right channel
+- Run manually: `~/scripts/realtek-alc298-audio-init.sh` to re-apply fix if needed
+
 ## 🙌 Credit
 
-Based on:
-
-  * Manjaro forum fix
-  * joshuagrisham’s GitHub work
+- **joshuagrisham’s GitHub work** ["https://github.com/joshuagrisham/samsung-galaxybook-extras/issues/80"]
+- **Manjaro community post by user @TO912** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
+- **topzyray (Tope Taiwo) for automation and Ubuntu port** ["https://github.com/topzyray/galaxybook2-linux-setup"]
 
 ## 📝 License
 
