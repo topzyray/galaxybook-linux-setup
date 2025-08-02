@@ -1,6 +1,21 @@
-# 🛠️ Galaxy Book2 Linux Audio Fix
+# 🛠️ Samsung Galaxy Book Linux Audio Fix
 
-This project contains scripts and services to fix the audio (Realtek ALC298 speaker amp) on **Samsung Galaxy Book2** laptops running Ubuntu-based Linux distros.
+This project contains scripts and services to fix the audio (Realtek ALC298 speaker amp) on **Samsung Galaxy Book2** laptops running Ubuntu-based Linux distros. This guide helps you fix the **internal speaker issue** on Samsung Galaxy Book devices running Ubuntu, where audio doesn't work out-of-the-box due to missing speaker amp initialization.
+
+## ✅ Tested On
+
+- **Device**: Samsung Galaxy Book2 NT950XDA
+- **Codec**: Realtek ALC298
+- **OS**: Ubuntu 22.04, 24.04+
+- **Kernel**: 5.8+ (tested with 6.x)
+
+## 📦 What This Fix Does
+
+- Forces correct driver to load: `snd_soc_skl_hda_dsp` (SOF)
+- Disables legacy HDA driver
+- Initializes 2 or 4 smart speaker amps via `hda-verb`
+- Installs systemd services to apply fix at boot + resume
+- Disables PulseAudio suspend (avoids speaker freeze)
 
 ## ✅ What’s Included
 
@@ -20,15 +35,63 @@ galaxybook2-linux-setup/ <br />
 
 ## 🚀 How to Use
 
-1. Clone or download the folder.
-2. Run the install script:
+### Method 1: Cloning
+
+Step 1: Clone: `git clone https://github.com/topzyray/galaxybook2-linux-setup.git`
+
+Step 2: Navigate to the folder:
+
+```bash
+cd galaxybook2-linux-setup
+```
+
+Step 3: Change permission to make script executable:
 
 ```bash
 chmod +x install.sh
+```
+
+Step 4: Run the install script:
+
+```bash
 ./install.sh
 ```
 
-3. Reboot your system:
+Step 5: Reboot your system:
+
+```bash
+sudo reboot
+```
+
+### Method 2: Download using `wget`
+
+Step 1: Download: `wget https://github.com/topzyray/galaxybook2-linux-setup/archive/refs/heads/main.zip`
+
+Step 2: Unzip content:
+
+```bash
+unzip main.zip
+```
+
+Step 3: Navigate to the folder:
+
+```bash
+cd galaxybook2-linux-setup-main
+```
+
+Step 4: Change permission to make script executable:
+
+```bash
+chmod +x install.sh
+```
+
+Step 5: Run the install script:
+
+```bash
+./install.sh
+```
+
+Step 6: Reboot your system:
 
 ```bash
 sudo reboot
