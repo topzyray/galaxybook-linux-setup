@@ -37,61 +37,69 @@ galaxybook-linux-setup/ <br />
 
 ### Method 1: Cloning
 
-Step 1: Clone: `git clone https://github.com/topzyray/galaxybook-linux-setup.git`
+Step 1 - Clone:
 
-Step 2: Navigate to the folder:
+```bash
+git clone https://github.com/topzyray/galaxybook-linux-setup.git
+```
+
+Step 2 - Navigate to the folder:
 
 ```bash
 cd galaxybook-linux-setup
 ```
 
-Step 3: Change permission to make script executable:
+Step 3 - Change permission to make script executable:
 
 ```bash
 chmod +x install.sh
 ```
 
-Step 4: Run the install script:
+Step 4 - Run the install script:
 
 ```bash
 ./install.sh
 ```
 
-Step 5: Reboot your system:
+Step 5 - Reboot your system:
 
 ```bash
 sudo reboot
 ```
 
-### Method 2: Download using `wget`
+### Method 2: Download using wget
 
-Step 1: Download: `wget https://github.com/topzyray/galaxybook-linux-setup/archive/refs/heads/main.zip`
+Step 1 - Download:
 
-Step 2: Unzip content:
+```bash
+wget https://github.com/topzyray/galaxybook-linux-setup/archive/refs/heads/main.zip
+```
+
+Step 2 - Unzip content:
 
 ```bash
 unzip main.zip
 ```
 
-Step 3: Navigate to the folder:
+Step 3 - Navigate to the folder:
 
 ```bash
 cd galaxybook-linux-setup-main
 ```
 
-Step 4: Change permission to make script executable:
+Step 4 - Change permission to make script executable:
 
 ```bash
 chmod +x install.sh
 ```
 
-Step 5: Run the install script:
+Step 5 - Run the install script:
 
 ```bash
 ./install.sh
 ```
 
-Step 6: Reboot your system:
+Step 6 - Reboot your system:
 
 ```bash
 sudo reboot
