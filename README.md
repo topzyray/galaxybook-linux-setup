@@ -14,14 +14,8 @@ This project contains scripts and services to fix the audio (Realtek ALC298 spea
 - Forces correct driver to load: `snd_soc_skl_hda_dsp` (SOF)
 - Disables legacy HDA driver
 - Initializes 2 or 4 smart speaker amps via `hda-verb`
-- Installs systemd services to apply fix at boot + resume
-- Disables PulseAudio suspend (avoids speaker freeze)
-
-## ✅ What’s Included
-
-- Initializes smart speaker amps via `hda-verb`
 - Enables audio fix at boot and after suspend
-- Disables PulseAudio suspend-on-idle (recommended)
+- Disables PulseAudio suspend-on-idle (avoids speaker freeze)
 
 ## 📦 Folder Structure
 
@@ -35,7 +29,7 @@ galaxybook-linux-setup/ <br />
 
 ## 🚀 How to Use
 
-### Method 1: Cloning
+### Download Method 1: Cloning
 
 Step 1 - Clone:
 
@@ -55,19 +49,7 @@ Step 3 - Change permission to make script executable:
 chmod +x install.sh
 ```
 
-Step 4 - Run the install script:
-
-```bash
-./install.sh
-```
-
-Step 5 - Reboot your system:
-
-```bash
-sudo reboot
-```
-
-### Method 2: Download using wget
+### Download Method 2: Download using wget
 
 Step 1 - Download:
 
@@ -93,17 +75,57 @@ Step 4 - Change permission to make script executable:
 chmod +x install.sh
 ```
 
-Step 5 - Run the install script:
+## After cloning or downloading the repository:
+
+### 🖥️ Run the installer script
 
 ```bash
 ./install.sh
 ```
 
-Step 6 - Reboot your system:
+This will:
+
+- Copy necessary audio fix scripts to your ~/scripts directory
+
+- Install and enable systemd services for audio initialization
+
+- Configure ALSA and PulseAudio as needed
+
+### 🔁 Reboot Options
+
+After setup, you can choose to reboot immediately or later:
+
+#### 🧑‍💻 Interactive Mode (default)
 
 ```bash
-sudo reboot
+./install.sh
 ```
+
+This will prompt you:
+
+```bash
+Do you want to reboot now? [y/N]:
+```
+
+- If you enter y or yes, the system will reboot after warning you to save your work.
+
+- If you enter n or anything else, the system won't reboot and you'll need to do it manually.
+
+#### ⚙️ Automatic Mode (no prompt)
+
+To skip the prompt and reboot automatically after setup:
+
+```bash
+./install.sh --yes
+```
+
+or
+
+```bash
+./install.sh -y
+```
+
+⚠️ Make sure to save all your work before running with --yes, as the system will reboot automatically.
 
 ## 🔊 Manual Setup (Advanced)
 
