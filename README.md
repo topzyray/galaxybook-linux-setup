@@ -10,13 +10,13 @@ This project contains scripts and services to fix the audio (Realtek ALC298 spea
 
 ## 📦 Folder Structure
 
-galaxybook2-linux-setup/ <br />
-├── install.sh <br />
-├── scripts/ <br />
-│ └── init-audio.sh <br />
-├── services/ <br />
-│ ├── galaxybook2-audio.service <br />
-│ └── galaxybook2-audio-resume.service <br />
+   galaxybook2-linux-setup/ <br />
+   ├── install.sh <br />
+   ├── scripts/ <br />
+   │ └── init-audio.sh <br />
+   ├── services/ <br />
+   │ ├── galaxybook2-audio.service <br />
+   │ └── galaxybook2-audio-resume.service <br />
 
 
 ## 🚀 How to Use
