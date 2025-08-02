@@ -25,7 +25,7 @@ This project contains scripts and services to fix the audio (Realtek ALC298 spea
 
 ## 📦 Folder Structure
 
-galaxybook2-linux-setup/ <br />
+galaxybook-linux-setup/ <br />
 ├── install.sh <br />
 ├── scripts/ <br />
 │ └── realtek-alc298-audio-init.sh <br />
@@ -37,12 +37,12 @@ galaxybook2-linux-setup/ <br />
 
 ### Method 1: Cloning
 
-Step 1: Clone: `git clone https://github.com/topzyray/galaxybook2-linux-setup.git`
+Step 1: Clone: `git clone https://github.com/topzyray/galaxybook-linux-setup.git`
 
 Step 2: Navigate to the folder:
 
 ```bash
-cd galaxybook2-linux-setup
+cd galaxybook-linux-setup
 ```
 
 Step 3: Change permission to make script executable:
@@ -65,7 +65,7 @@ sudo reboot
 
 ### Method 2: Download using `wget`
 
-Step 1: Download: `wget https://github.com/topzyray/galaxybook2-linux-setup/archive/refs/heads/main.zip`
+Step 1: Download: `wget https://github.com/topzyray/galaxybook-linux-setup/archive/refs/heads/main.zip`
 
 Step 2: Unzip content:
 
@@ -76,7 +76,7 @@ unzip main.zip
 Step 3: Navigate to the folder:
 
 ```bash
-cd galaxybook2-linux-setup-main
+cd galaxybook-linux-setup-main
 ```
 
 Step 4: Change permission to make script executable:
@@ -114,7 +114,7 @@ If you prefer to set it up step by step, follow the guide inside the script or r
 
 - **joshuagrisham’s GitHub work** ["https://github.com/joshuagrisham/samsung-galaxybook-extras/issues/80"]
 - **Manjaro community post by user @TO912** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
-- **topzyray (Tope Taiwo) for automation and Ubuntu port** ["https://github.com/topzyray/galaxybook2-linux-setup"]
+- **topzyray (Tope Taiwo) for automation and Ubuntu port** ["https://github.com/topzyray/galaxybook-linux-setup"]
 
 ## ❤️ Share or Contribute
 
