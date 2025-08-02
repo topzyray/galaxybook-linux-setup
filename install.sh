@@ -35,7 +35,7 @@ echo "🔄 Reloading systemd daemon..."
 sudo systemctl daemon-reload
 
 echo "✅ Enabling audio and resume services..."
-sudo systemctl enable galaxybook2-audio.service
-sudo systemctl enable galaxybook2-audio-resume.service
+sudo systemctl enable galaxybook-audio.service
+sudo systemctl enable galaxybook-audio-resume.service
 
 echo "🎉 Setup complete. Please reboot to apply changes."
