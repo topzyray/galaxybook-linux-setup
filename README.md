@@ -41,3 +41,7 @@ Based on:
 
   * Manjaro forum fix
   * joshuagrisham’s GitHub work
+
+## 📝 License
+
+This project is open-source under the MIT License. Contributions are welcome!
