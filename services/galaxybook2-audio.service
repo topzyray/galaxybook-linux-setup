@@ -1,0 +1,9 @@
+[Unit]
+Description=GalaxyBook2 Audio Init Script
+
+[Service]
+Type=idle
+ExecStart=/home/$USER/scripts/realtek-alc298-audio-init.sh
+
+[Install]
+WantedBy=multi-user.target

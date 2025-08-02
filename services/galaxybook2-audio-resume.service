@@ -1,0 +1,10 @@
+[Unit]
+Description=GalaxyBook2 Audio Resume Fix
+
+[Service]
+Type=idle
+ExecStart=/home/$USER/scripts/realtek-alc298-audio-init.sh
+
+[Install]
+WantedBy=suspend.target
+
