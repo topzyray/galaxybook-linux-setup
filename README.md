@@ -143,7 +143,7 @@ If you prefer to set it up step by step, follow the guide inside the script or r
 ## 🙌 Credit
 
 - **joshuagrisham’s GitHub work** ["https://github.com/joshuagrisham/samsung-galaxybook-extras/issues/80"]
-- **Manjaro community post by user @TO912** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
+- **Manjaro community post by user @drlucas** ["https://forum.manjaro.org/t/howto-set-up-the-audio-card-in-samsung-galaxy-book/37090"]
 - **topzyray (Tope Taiwo) for automation and Ubuntu port** ["https://github.com/topzyray/galaxybook-linux-setup"]
 
 ## ❤️ Share or Contribute
